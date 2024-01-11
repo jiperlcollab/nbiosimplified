@@ -34,7 +34,6 @@ jobs:
         path: extensions
 
     - run: ls -la
-
     - run: extensions/.github/workflows/install-topas.sh
-
-    - run: ls -la topas_3_9/debian
+    - run: ls -la topas_3_9/debian9
+    - run: ls -la /home/runner/work/topas-install
