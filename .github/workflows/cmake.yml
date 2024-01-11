@@ -41,5 +41,7 @@ jobs:
       with:
         name: Executable
         path: |
-          topas_3_9/debian9
+          topas_3_9/debian9/bin
+          topas_3_9/debian9/lib
+          topas_3_9/debian9/examples
 
