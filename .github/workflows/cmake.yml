@@ -35,3 +35,11 @@ jobs:
     - run: ls -la topas_3_9/debian9
     - run: extensions/.github/workflows/install-topas.sh
     - run: ls -la topas_3_9/debian9
+
+    - name: Save Executable as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Executable
+        path: |
+          topas_3_9/debian9/bin/topas
+
