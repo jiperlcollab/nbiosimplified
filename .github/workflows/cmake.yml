@@ -37,4 +37,4 @@ jobs:
 
     - run: extensions/.github/workflows/install-topas.sh
 
-    - run: ls -la topas_3_9/bin
+    - run: ls -la topas_3_9/debian
