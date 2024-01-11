@@ -8,5 +8,4 @@ cd "$TOPAS_SOURCE_PATH" || exit
 unzip Geant4Headers.zip
 cmake -DTOPAS_EXTENSIONS_DIR="$NBIO_SOURCE_PATH"
 make
-make install
-# make install > /dev/null 2>&1
+make -install
