@@ -15,8 +15,6 @@ jobs:
       TOPAS_SOURCE_PATH: "/home/runner/work/mynbio/mynbio/topas_3_9/debian9"
       NBIO_SOURCE_PATH: "/home/runner/work/mynbio/mynbio/extensions"
       TOPAS_BUILD_PATH: "/home/runner/work/topas-build"
-      TOPAS_INSTALL_PATH: "/home/runner/work/topas-install"
-      TOPAS_HEADLESS_MODE: "ON"
       BUILD_TYPE: Release
 
     steps:
@@ -36,4 +34,3 @@ jobs:
     - run: ls -la
     - run: extensions/.github/workflows/install-topas.sh
     - run: ls -la topas_3_9/debian9
-    - run: ls -la /home/runner/work/topas-install
