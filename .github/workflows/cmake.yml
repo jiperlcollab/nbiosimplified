@@ -21,13 +21,13 @@ jobs:
     - run: pwd
 
     - name: Checkout Topas
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: 'topasmc/topas-releases'
         path: ''
 
     - name: Checkout this nBio
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: extensions
 
