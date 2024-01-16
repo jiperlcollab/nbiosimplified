@@ -8,3 +8,4 @@ unzip Geant4Headers.zip > /dev/null
 cmake -DTOPAS_EXTENSIONS_DIR="$NBIO_SOURCE_PATH" -DCMAKE_INSTALL_PREFIX=~/topas-install
 cmake --build .
 cmake --install .
+cmake --package .
