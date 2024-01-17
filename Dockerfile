@@ -16,7 +16,7 @@ RUN apt update -y && apt upgrade -y && apt install -y \
     bash \
     unzip
 
-WORKDIR /home/runner/work/mynbio/mynbio/workspace
+WORKDIR /tmp
 
 COPY /home/runner/work/mynbio/mynbio/topas_3_9/topas_3_9/debian9 .
 
