@@ -1,8 +1,10 @@
 # nBio docker build
 
-FROM ubuntu:20.04 AS build
+FROM ubuntu:20.04
 
-RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt update && apt install -y \
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update -y && apt upgrade -y && apt install -y \
     libexpat1-dev \
     libgl1-mesa-dev \
     libglu1-mesa-dev \
