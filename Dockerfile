@@ -16,6 +16,6 @@ RUN apt update -y && apt upgrade -y && apt install -y \
     bash \
     unzip
 
-WORKDIR /topas_3_9/debian9
+WORKDIR /home/runner/work/mynbio/mynbio/topas_3_9/debian9
 
 RUN ls -la
