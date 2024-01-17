@@ -19,6 +19,4 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 WORKDIR /topasdocker/build
 
 RUN cd /home/runner/work/mynbio/mynbio/topas_3_9/debian9 && \
-    unzip Geant4Headers.zip && \
-    cmake -DTOPAS_EXTENSIONS_DIR="$NBIO_SOURCE_PATH" && \
-    cmake --build .
+    unzip Geant4Headers.zip
