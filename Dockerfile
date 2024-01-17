@@ -18,4 +18,5 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 
 WORKDIR /topas_3_9/debian9
 
-RUN unzip Geant4Headers.zip
+RUN ls -la && \
+    Geant4Headers.zip
