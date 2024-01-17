@@ -48,7 +48,7 @@ jobs:
         #load: true
         tags: my-project/base:latest
         context: topas_3_9/debian9
-        file: extensions/Dockerfile.txt
+        file: extensions/Dockerfile
 
     - run: ls -la topas_3_9/debian9
     - run: ls -la topas_3_9/debian9/bin
