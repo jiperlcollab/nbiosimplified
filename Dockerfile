@@ -16,8 +16,8 @@ RUN apt update -y && apt upgrade -y && apt install -y \
     bash \
     unzip
 
-WORKDIR /home/runner/work/mynbio/mynbio/topas_3_9/debian9
+WORKDIR /topas_3_9/debian9
 
 RUN unzip Geant4Headers.zip && \
-    cmake -DTOPAS_EXTENSIONS_DIR="$NBIO_SOURCE_PATH" && \
+    cmake -DTOPAS_EXTENSIONS_DIR=../extensions && \
     cmake --build .
