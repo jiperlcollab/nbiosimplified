@@ -18,6 +18,4 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 
 WORKDIR /topas_3_9/debian9
 
-RUN unzip Geant4Headers.zip && \
-    cmake -DTOPAS_EXTENSIONS_DIR=../extensions && \
-    cmake --build .
+RUN unzip Geant4Headers.zip
