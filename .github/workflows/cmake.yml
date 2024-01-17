@@ -57,8 +57,8 @@ jobs:
         tags: my-project/base:latest
         context: topas_3_9/debian9
         file: extensions/Dockerfile
-        cache-from: type=local,src=/tmp/.buildx-cache
-        cache-to: type=local,dest=/tmp/.buildx-cache-new
+        #cache-from: type=local,src=/tmp/.buildx-cache
+        #cache-to: type=local,dest=/tmp/.buildx-cache-new
 
     - run: ls -la topas_3_9/debian9
     - run: ls -la topas_3_9/debian9/bin
