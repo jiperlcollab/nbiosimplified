@@ -2,7 +2,7 @@
 
 FROM ubuntu:20.04 AS build
 
-RUN apt update && apt install -y \
+RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt update && apt install -y \
     libexpat1-dev \
     libgl1-mesa-dev \
     libglu1-mesa-dev \
