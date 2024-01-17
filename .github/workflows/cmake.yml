@@ -47,7 +47,7 @@ jobs:
         # not necessary here, because we set it before
         #load: true
         tags: my-project/base:latest
-        context: business
+        context: topas_3_9/debian9
         file: extensions/Dockerfile
 
     - run: ls -la topas_3_9/debian9
