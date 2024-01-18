@@ -21,7 +21,7 @@ WORKDIR /tmp
 RUN pwd && \
     ls -la
 
-COPY ../ .
+COPY ../topas_3_9/debian9 .
 
 RUN pwd && \
     ls -la
