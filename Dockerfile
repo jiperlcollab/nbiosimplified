@@ -16,7 +16,7 @@ RUN apt update -y && apt upgrade -y && apt install -y \
     bash \
     unzip
 
-#WORKDIR /tmp
+WORKDIR /tmp
 
 COPY topas_3_9/debian9 .
 
