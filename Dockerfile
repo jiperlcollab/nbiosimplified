@@ -18,11 +18,12 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 
 WORKDIR /tmp
 
-RUN pwd && \
-    ls -la
-
 COPY . .
 
-RUN pwd && \
-    ls -la
+RUN ls -la
 
+WORKDIR topas_3_9/debian9
+
+RUN ls -la
+
+RUN unzip Geant4headers.zip
