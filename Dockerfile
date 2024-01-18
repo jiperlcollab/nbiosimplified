@@ -21,7 +21,7 @@ WORKDIR /tmp
 RUN pwd && \
     ls -la
 
-COPY . .
+COPY ../ .
 
 RUN pwd && \
     ls -la

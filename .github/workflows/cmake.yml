@@ -50,8 +50,6 @@ jobs:
 
     - name: Build business-layer container
       uses: docker/build-push-action@v2
-      with:
-        context: topas_3_9/debian9
 
     - run: ls -la topas_3_9/debian9
     - run: ls -la topas_3_9/debian9/bin
