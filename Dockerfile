@@ -18,8 +18,8 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 
 WORKDIR /tmp
 
-COPY /home/runner/work/mynbio/mynbio/topas_3_9/debian9 .
+#COPY /home/runner/work/mynbio/mynbio/topas_3_9/debian9 .
 
-RUN pwd && \
+#RUN pwd && \
     ls -la
 
