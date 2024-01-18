@@ -26,4 +26,4 @@ WORKDIR topas_3_9/debian9
 
 RUN ls -la
 
-RUN unzip Geant4headers.zip
+RUN unzip Geant4Headers.zip
