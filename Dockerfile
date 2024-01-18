@@ -18,6 +18,9 @@ RUN apt update -y && apt upgrade -y && apt install -y \
 
 WORKDIR /tmp
 
+RUN pwd && \
+    ls -la
+
 COPY topas_3_9/debian9/*.txt .
 
 RUN pwd && \
