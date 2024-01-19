@@ -27,3 +27,9 @@ WORKDIR topas_3_9/debian9
 RUN ls -la
 
 RUN unzip Geant4Headers.zip
+
+RUN ls -la
+
+RUN cmake -DTOPAS_EXTENSIONS_DIR="$NBIO_SOURCE_PATH" && \
+    cmake -DTOPAS_EXTENSIONS_DIR=../extensions && \
+    cmake --build .
