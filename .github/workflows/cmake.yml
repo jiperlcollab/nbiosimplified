@@ -42,11 +42,25 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Build and test
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        #push: false
+        load: true
+        tags: user/app:test
+        cache-from: type=local,src=/tmp/.buildx-cache
+        cache-to: type=local,dest=/tmp/.buildx-cache-new
+
+    - name: Test
+      run: |
+        docker run --rm user/app:latest          
+
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
         context: .
-        push: false
+        push: true
         tags: user/app:latest
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache-new
