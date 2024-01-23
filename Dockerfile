@@ -35,4 +35,6 @@ RUN ls -la ../../extensions
 RUN cmake -DTOPAS_EXTENSIONS_DIR=../../extensions && \
     cmake --build .
 
+ENTRYPOINT ["get_geant4_data.sh"]
+
 CMD ["bin/topas", "examples/Basic/AllParameterForms.txt"]
