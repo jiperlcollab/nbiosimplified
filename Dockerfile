@@ -34,3 +34,5 @@ RUN ls -la ../../extensions
 
 RUN cmake -DTOPAS_EXTENSIONS_DIR=../../extensions && \
     cmake --build .
+
+CMD ["bin/topas", "examples/AllParameterForms.txt"]
