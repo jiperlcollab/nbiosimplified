@@ -48,20 +48,20 @@ jobs:
         context: .
         #push: false
         load: true
-        tags: user/app:test
+        tags: jiperl/nbio:test
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache-new
 
     - name: Test
       run: |
-        docker run --rm user/app:latest          
+        docker run --rm jiperl/nbio:test          
 
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
         context: .
         push: true
-        tags: user/app:latest
+        tags: jiperl/nbio:latest
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache-new
 
