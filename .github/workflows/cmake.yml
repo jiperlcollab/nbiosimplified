@@ -46,7 +46,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        #push: false
         load: true
         tags: jiperl/nbio:test
         cache-from: type=local,src=/tmp/.buildx-cache
