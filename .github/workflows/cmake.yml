@@ -15,13 +15,14 @@ jobs:
         repository: 'topasmc/topas-releases'
         path: ''
 
+    - run: ls -la topas_3_9/debian9
+
     - name: Checkout User's version of nBio
       uses: actions/checkout@v4
       with:
         path: extensions
 
     - run: cp extensions/Dockerfile .
-    - run: ls -la topas_3_9/debian9
     - run: ls -la extensions
 
     - name: Set up Docker Buildx
