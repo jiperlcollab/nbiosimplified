@@ -22,8 +22,9 @@ jobs:
       with:
         path: extensions
 
-    - run: cp extensions/Dockerfile .
     - run: ls -la extensions
+
+    - run: cp topas_3_9/debian9/Dockerfile .
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
