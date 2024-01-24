@@ -35,10 +35,8 @@ RUN ls -la ../../extensions
 RUN cmake -DTOPAS_EXTENSIONS_DIR=../../extensions && \
     cmake --build .
 
-COPY get_geant4_data.sh /usr/local/bin/get_geant4_data.sh 
-RUN chmod +x /usr/local/bin/get_geant4_data.sh
-
-ENTRYPOINT ["get_geant4_data.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "get_geant4_data.sh"]
+#ENTRYPOINT ["get_geant4_data.sh"]
 #ENTRYPOINT ["ls", "-la"]
 #CMD ["ls", "-la"]
 #CMD ["bin/topas", "examples/Basic/BatchJobShared.txt"]
