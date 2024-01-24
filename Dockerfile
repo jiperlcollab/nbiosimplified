@@ -35,7 +35,7 @@ RUN ls -la ../../extensions
 RUN cmake -DTOPAS_EXTENSIONS_DIR=../../extensions && \
     cmake --build .
 
-ENTRYPOINT ["/bin/bash", "-c", "get_geant4_data.sh"]
+ENTRYPOINT ["sh", "get_geant4_data.sh"]
 #ENTRYPOINT ["get_geant4_data.sh"]
 #ENTRYPOINT ["ls", "-la"]
 #CMD ["ls", "-la"]
