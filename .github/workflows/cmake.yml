@@ -8,7 +8,7 @@ env:
   BUILD_TYPE: Release
 
 jobs:
-  Build_For_Docker:
+  Build_For_Debian:
     runs-on: ubuntu-latest
 
     env:
@@ -33,7 +33,8 @@ jobs:
 
     - run: ls -la
     - run: ls -la topas_3_10/debian9
-    - run: extensions/.github/workflows/install-topas.sh
+    - run: ls -la extensions/.github/workflows
+    - run: source extensions/.github/workflows/install-topas.sh
     - run: ls -la topas_3_10/debian9
     - run: ls -la topas_3_10/debian9/bin
     - run: ls -la topas_3_10/debian9/lib
