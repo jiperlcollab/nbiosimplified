@@ -13,7 +13,7 @@ jobs:
 
     env:
       TOPAS_SOURCE_PATH: "topas_3_10/debian9"
-      NBIO_SOURCE_PATH: "extensions"
+      NBIO_SOURCE_PATH: "../../extensions"
       TOPAS_BUILD_PATH: "/home/runner/work/topas-build"
       BUILD_TYPE: Release
 
